@@ -11,6 +11,7 @@ mkdir -p ~/.fluxbox
 echo "session.screen0.toolbar.visible: false" > ~/.fluxbox/init  # Hide toolbar to avoid errors
 
 echo "Starting Fluxbox window manager..."
+ln -s /usr/share/fluxbox/nls/C /usr/share/fluxbox/nls/C.UTF-8
 fluxbox -log ~/.fluxbox/fb.log &  # Redirect logs to a file instead of the console
 
 sleep 2
